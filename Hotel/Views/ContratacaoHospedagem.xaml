@@ -62,11 +62,14 @@
                         </HorizontalStackLayout>
                     </VerticalStackLayout>
                 </Frame>
+                
                 <Button Text="Avançar"/>
-
-
+               
 
             </VerticalStackLayout>
         </Frame>
+        <Button Text="Sobre" Padding="10" Margin="50"
+         Clicked="Navegar_sobre"/>
     </VerticalStackLayout>
+    
 </ContentPage>  

@@ -6,4 +6,11 @@ public partial class ContratacaoHospedagem : ContentPage
 	{
 		InitializeComponent();
 	}
+
+    private void Navegar_sobre(object sender, EventArgs e)
+    {
+		Navigation.PushAsync(new Sobre());
+    }
+
+  
 }

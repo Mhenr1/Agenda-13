@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Hotel.Views.Sobre"
+             Title="Sobre"
+             NavigationPage.HasNavigationBar="False">
+    <VerticalStackLayout>
+        <Label 
+            Text="Sobre nós!"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" 
+            FontFamily="Lobster"
+            FontSize="Large"
+            TextColor="{StaticResource Primary}"/>
+        <Frame>
+            <VerticalStackLayout>
+                <Label Text="Um aplicativo simples de reserva, feito com carinho."/>
+
+                <Label Text="Criado por: MHenri em 2025" Padding="10,20,0,0"
+                      />
+                   
+                
+            </VerticalStackLayout>
+        </Frame>
+    </VerticalStackLayout>
+</ContentPage>
