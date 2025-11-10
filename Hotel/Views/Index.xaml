@@ -4,67 +4,79 @@
              x:Class="Hotel.Views.Index"
              Title="Hotel Maravilha"
              NavigationPage.HasNavigationBar="False">
-    <Frame>
-        <Grid ColumnDefinitions="*,*" RowDefinitions="*,*" 
-                RowSpacing="0" ColumnSpacing="10">
-            
-            <StackLayout Spacing="4" HorizontalOptions="Center"  Grid.Row="0" Grid.Column="0">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="onTaped" CommandParameter="0"/>
-                </StackLayout.GestureRecognizers>
 
-                <Image Source="suitesluxo.jpg"/>
-                <Label Text="Suíte Super Luxo" 
+    <VerticalStackLayout      HorizontalOptions="FillAndExpand"   VerticalOptions="FillAndExpand" Padding="0" BackgroundColor="{DynamicResource OffBlack}">
+
+        <Frame>
+            <Label 
+            Text="Bem-vindo ao Hotel Maravilha!"
+            FontFamily="Lobster"
+            FontSize="Large"
+            TextColor="{StaticResource Primary}"
+            HorizontalTextAlignment="Center"/>
+        </Frame>
+
+        <Frame>
+            <Grid ColumnDefinitions="*,*" RowDefinitions="*,*" 
+                RowSpacing="0" ColumnSpacing="10">
+
+                <StackLayout Spacing="4" HorizontalOptions="Center"  Grid.Row="0" Grid.Column="0">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="onTaped" CommandParameter="0"/>
+                    </StackLayout.GestureRecognizers>
+
+                    <Image Source="suitesluxo.jpg"/>
+                    <Label Text="Suíte Super Luxo" 
                    FontFamily="Lobster"
                    FontSize="20"
                    TextColor="{StaticResource Primary}"
                    HorizontalTextAlignment="Center"
                    />
-            </StackLayout>
-            
-            <StackLayout Spacing="4" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="onTaped" CommandParameter="1"/>
-                </StackLayout.GestureRecognizers>
-                <Image Source="suiteluxo.jpg"/>
-                <Label Text="Suíte Luxo" 
+                </StackLayout>
+
+                <StackLayout Spacing="4" HorizontalOptions="Center" Grid.Row="0" Grid.Column="1">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="onTaped" CommandParameter="1"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="suiteluxo.jpg"/>
+                    <Label Text="Suíte Luxo" 
              FontFamily="Lobster"
              FontSize="20"
              TextColor="{StaticResource Primary}"
              HorizontalTextAlignment="Center"
              />
-            </StackLayout>
-            
-            <StackLayout Spacing="4" HorizontalOptions="Center"  Grid.Row="1" Grid.Column="0">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="onTaped" CommandParameter="2"/>
-                </StackLayout.GestureRecognizers>
+                </StackLayout>
 
-                <Image Source="suitesingle.jpg"/>
-                <Label Text="Suíte Single" 
+                <StackLayout Spacing="4" HorizontalOptions="Center"  Grid.Row="1" Grid.Column="0">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="onTaped" CommandParameter="2"/>
+                    </StackLayout.GestureRecognizers>
+
+                    <Image Source="suitesingle.jpg"/>
+                    <Label Text="Suíte Single" 
         FontFamily="Lobster"
         FontSize="20"
         TextColor="{StaticResource Primary}"
         HorizontalTextAlignment="Center"
         />
-            </StackLayout>
+                </StackLayout>
 
-            <StackLayout Spacing="4" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1">
-                <StackLayout.GestureRecognizers>
-                    <TapGestureRecognizer Tapped="onTaped" CommandParameter="3"/>
-                </StackLayout.GestureRecognizers>
-                <Image Source="suitestandard.jpg"/>
-                <Label Text="Suíte Standard" 
+                <StackLayout Spacing="4" HorizontalOptions="Center" Grid.Row="1" Grid.Column="1">
+                    <StackLayout.GestureRecognizers>
+                        <TapGestureRecognizer Tapped="onTaped" CommandParameter="3"/>
+                    </StackLayout.GestureRecognizers>
+                    <Image Source="suitestandard.jpg"/>
+                    <Label Text="Suíte Standard" 
   FontFamily="Lobster"
   FontSize="20"
   TextColor="{StaticResource Primary}"
   HorizontalTextAlignment="Center"
   />
-            </StackLayout>
-        </Grid>
+                </StackLayout>
+            </Grid>
 
-    </Frame>
-
-
+        </Frame>
+        <Button Text="Sobre" Padding="10" Margin="50" Clicked="Navegar_sobre"/>
+    </VerticalStackLayout>
 
 </ContentPage>

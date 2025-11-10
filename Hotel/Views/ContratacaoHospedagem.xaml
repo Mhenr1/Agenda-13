@@ -5,7 +5,8 @@
                  Title="ContratacaoHospedagem"
                  NavigationPage.HasNavigationBar="False"
                  >
-    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
+    <ScrollView>
+        <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
         <Label 
                 Text="Cálculo da Diária"
                 FontFamily="Lobster"
@@ -76,8 +77,7 @@
 
             </VerticalStackLayout>
         </Frame>
-        <Button Text="Sobre" Padding="10" Margin="50"
-         Clicked="Navegar_sobre"/>
+        
     </VerticalStackLayout>
-    
+    </ScrollView>
 </ContentPage>  

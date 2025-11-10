@@ -21,7 +21,11 @@ namespace Hotel.Views
 
             Navigation.PushAsync(new ContratacaoHospedagem());
         }
+        private void Navegar_sobre(object sender, EventArgs e)
+        {
+            Navigation.PushAsync(new Sobre());
+        }
 
-     
+
     }
 }

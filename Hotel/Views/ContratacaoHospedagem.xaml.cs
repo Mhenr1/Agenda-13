@@ -25,10 +25,7 @@ public partial class ContratacaoHospedagem : ContentPage
     }
     
     
-    private void Navegar_sobre(object sender, EventArgs e)
-    {
-        Navigation.PushAsync(new Sobre());
-    }
+  
 
     private void Button_Clicked(object sender, EventArgs e)
     {

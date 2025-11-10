@@ -4,59 +4,59 @@
              x:Class="Hotel.Views.HospedagemInfo"
              Title="HospedagemInfo" 
              NavigationPage.HasNavigationBar="False">
-
-    <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
-        <Label Text="Suíte super Luxo"
+    
+        <VerticalStackLayout VerticalOptions="CenterAndExpand" Padding="10">
+            <Label Text="Suíte super Luxo"
                FontFamily="Lobster"
                FontSize="45"
                TextColor="{StaticResource Primary}"
                HorizontalTextAlignment="Center"/>
-
-        <Frame Margin="10" >
-            <HorizontalStackLayout>
-                <HorizontalStackLayout Margin="0,0,10,0">
-                    <Label Text="Adultos:" Margin="0,0,5,0"/>
-                    <Label Text="2"
+       
+            <Frame Margin="10" >
+                <HorizontalStackLayout>
+                    <HorizontalStackLayout Margin="0,0,10,0">
+                        <Label Text="Adultos:" Margin="0,0,5,0"/>
+                        <Label Text="2"
                            TextColor="{StaticResource Primary}"/>
 
-                </HorizontalStackLayout>
-                <HorizontalStackLayout>
-                    <Label Text="Crianças:" Margin="0,0,5,0"/>
-                    <Label Text="3"
+                    </HorizontalStackLayout>
+                    <HorizontalStackLayout>
+                        <Label Text="Crianças:" Margin="0,0,5,0"/>
+                        <Label Text="3"
             TextColor="{StaticResource Primary}"/>
 
+                    </HorizontalStackLayout>
                 </HorizontalStackLayout>
-            </HorizontalStackLayout>
-        </Frame>
+            </Frame>
 
-        <Frame Margin="10">
+            <Frame Margin="10">
 
-            <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*,*,*">
-                <Grid.Resources>
-                    <Style TargetType="Label">
-                        <Setter Property="HorizontalOptions" Value="Center"/>
+                <Grid RowDefinitions="Auto, Auto" ColumnDefinitions="*,*,*">
+                    <Grid.Resources>
+                        <Style TargetType="Label">
+                            <Setter Property="HorizontalOptions" Value="Center"/>
 
-                    </Style>
-                </Grid.Resources>
-                
-                <Label Text="Check-in:" Grid.Row="0" Grid.Column="0"/>
-                <Label Text="10/11/2025" Grid.Row="1" Grid.Column="0"/>
+                        </Style>
+                    </Grid.Resources>
 
-                <Label Text="Check-out:" Grid.Row="0" Grid.Column="1"/>
-                <Label Text="17/11/2025" Grid.Row="1" Grid.Column="1"/>
+                    <Label Text="Check-in:" Grid.Row="0" Grid.Column="0"/>
+                    <Label Text="10/11/2025" Grid.Row="1" Grid.Column="0"/>
 
-                <Label Text="Estadia:" Grid.Row="0" Grid.Column="2"/>
-                <Label Text="7" Grid.Row="1" Grid.Column="2" />
-            </Grid>
-        </Frame>
-        <Frame Margin="10">
-            <HorizontalStackLayout>
-                <Label Text="Valor total: " />
-                <Label Text=" R$ 500,00" TextColor="{StaticResource Primary}"/>
-            </HorizontalStackLayout>
-        </Frame>
-        <Button Text="Voltar" HorizontalOptions="Center" Clicked="Button_Clicked"
+                    <Label Text="Check-out:" Grid.Row="0" Grid.Column="1"/>
+                    <Label Text="17/11/2025" Grid.Row="1" Grid.Column="1"/>
+
+                    <Label Text="Estadia:" Grid.Row="0" Grid.Column="2"/>
+                    <Label Text="7" Grid.Row="1" Grid.Column="2" />
+                </Grid>
+            </Frame>
+            <Frame Margin="10">
+                <HorizontalStackLayout>
+                    <Label Text="Valor total: " />
+                    <Label Text=" R$ 500,00" TextColor="{StaticResource Primary}"/>
+                </HorizontalStackLayout>
+            </Frame>
+            <Button Text="Voltar" HorizontalOptions="Center" Clicked="Button_Clicked"
                 BackgroundColor="{StaticResource Tertiary}"
                 TextColor="{StaticResource Secondary}"/>
-    </VerticalStackLayout>
+        </VerticalStackLayout>
 </ContentPage>
